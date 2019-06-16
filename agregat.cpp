@@ -39,7 +39,7 @@ int main()
 {
 	Y y = { 'a', {10, 20}, {20, 30} };
 	//Z z = { 'a', {10, 20}, {20, 30} }; //Error, bo to nie agregat. Wykomentowanie floata naprawi problem
-
+	Z tab[3] = {Z(), Z()};//Tablica nieagregatow jest agregatem
 	cout << "c: " << y.c << "\tx.i1: " << y.x.i1 << "\tx.i2: " << y.x.i2
 		<< "\ti[0]: " << y.i[0] << "\ti[1]: " << y.i[1] << "\tf: " << y.f;
 }
